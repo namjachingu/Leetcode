@@ -5,6 +5,7 @@ public:
     int lengthOfLongestSubstring(const std::string & s) {
         return s.size();
     }
+
     std::string longest_substring(const & std::string s) {
         std::string current_string;
         std::vector<std::string> nonRepetitiveCharacters;
