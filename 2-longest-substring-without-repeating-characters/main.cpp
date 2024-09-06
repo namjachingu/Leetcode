@@ -2,10 +2,10 @@
 
 class Substring {
 public:
-    int lengthOfLongestSubstring(std::string s) {
+    int lengthOfLongestSubstring(const std::string & s) {
         return s.size();
     }
-    std::string longest_substring(std::string s) {
+    std::string longest_substring(const & std::string s) {
         std::string current_string;
         std::vector<std::string> nonRepetitiveCharacters;
 
@@ -29,7 +29,7 @@ public:
         }
 
         std::string longest_substring = nonRepetitiveCharacters[0];
-        for (auto & substring : nonRepetitiveCharacters) {
+        for (const auto & substring : nonRepetitiveCharacters) {
             if (substring.size() > longest_substring.size()) {
                 longest_substring = substring;
             }
